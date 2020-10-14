@@ -1,8 +1,10 @@
-# React Conf Ticket Card Component
+# Conf Ticket Card
 
 > react, conf ticket, card component
 
+https://github.com/xgqfrms/Conf-Ticket-Card
 
+https://www.npmjs.com/package/conf-ticket-card
 
 
 ## install
