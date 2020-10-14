@@ -1,0 +1,46 @@
+/* .vertical-text {
+  transform: rotateX(90);
+} */
+
+section{
+  display: flex;
+  flex-flow: nowrap row;
+}
+
+div {
+  width: 200px;
+  height: 100px;
+  background: #000;
+  color: #0f0;
+  font-size: 23px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: block; */
+  transition: all 0.3s 2s ease-in-out;
+}
+
+.rotate:hover {
+  transform: rotate(90deg);
+}
+
+
+.rotate-x:hover {
+  transform: rotateX(90deg);
+}
+
+.rotate-y:hover {
+  transform: rotateY(90deg);
+}
+
+.rotate-z:hover {
+  transform: rotateZ(90deg);
+}
+
+/* x,y,z,deg */
+/* 0~1  */
+.rotate-3d:hover {
+  transform: rotate3d(1, 1, 1, 90deg);
+}
+
