@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 
 /**
  *
@@ -20,18 +20,77 @@
  *
  */
 
+import React, { Component } from "react";
+
 const log = console.log;
 
-const App = (datas = [], debug = false) => {
-  let result = ``;
-  // do something...
-  return result;
-};
+class ConfTicketCard extends Component {
+  constructor(props) {
+    super();
+    // this.state = {
+    //   username: "",
+    //   avatar: "",
+    //   account: "",
+    //   date: "",
+    //   time: "",
+    //   uid: "",
+    //   icons: [],
+    //   link: "",
+    //   host: "",
+    //   sponsor: "",
+    //   slogan: "",
+    // };
+  }
+  // onClick = (e) => {
+  //   log(`click event =`, e);
+  // }
+  render() {
+    const {
+      options: {
+        username,
+        avatar,
+        account,
+        date,
+        time,
+        uid,
+        icons,
+        link,
+        host,
+        sponsor,
+        slogan,
+      },
+      onClick,
+    } = this.props;
+    return (
+      <section className="conf-ticket-card-container" onClick={onClick}>
+        <div className="conf-ticket-card-item">
+          <img src={avatar} alt="avatar"/>
+          <span>{username}</span>
+          <span>{account}</span>
+        </div>
+        <div className="conf-ticket-card-item">
+          <span>{date}</span>
+          <span>{time}</span>
+          <div>
+            {icons.map(icon => <span>{icon}</span>)}
+          </div>
+        </div>
+        <div className="conf-ticket-card-item">
+          <span>{host}</span>
+          <span>{sponsor}</span>
+          <span>{slogan}</span>
+          <span>{link}</span>
+        </div>
+        <div className="conf-ticket-card-item">
+          <span>{uid}</span>
+        </div>
+      </section>
+    );
+  }
+}
 
-
-
-export default App;
+export default ConfTicketCard;
 
 export {
-  App,
+  ConfTicketCard,
 };

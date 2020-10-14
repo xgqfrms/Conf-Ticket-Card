@@ -1,15 +1,17 @@
 {
-  "name": "github-template",
-  "version": "1.0.1",
-  "description": "github repo template",
+  "name": "conf-ticket-card",
+  "version": "0.0.2",
+  "description": "React Conf Ticket Card Component",
   "author": "xgqfrms",
   "license": "MIT",
-  "main": "src/index.js",
+  "main": "build/index.min.js",
+  "type": "module",
+  "entry": "src/index.js",
   "keywords": [
-    "js",
-    "node.js",
     "web",
-    "fullstack"
+    "react",
+    "component",
+    "conf-ticket-card"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -26,10 +28,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xgqfrms/template.git"
+    "url": "git+https://github.com/xgqfrms/conf-ticket-card.git"
   },
   "bugs": {
-    "url": "https://github.com/xgqfrms/template/issues"
+    "url": "https://github.com/xgqfrms/conf-ticket-card/issues"
   },
-  "homepage": "https://github.com/xgqfrms/template#readme"
+  "homepage": "https://github.com/xgqfrms/conf-ticket-card#readme",
+  "dependencies": {
+    "react": "^16.13.1"
+  }
 }
