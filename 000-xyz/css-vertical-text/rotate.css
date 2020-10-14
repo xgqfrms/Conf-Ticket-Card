@@ -2,14 +2,19 @@
   transform: rotateX(90);
 } */
 
+main {
+  display: flex;
+  flex-flow: nowrap column;
+}
+
 section{
   display: flex;
   flex-flow: nowrap row;
 }
 
 div {
-  width: 200px;
-  height: 100px;
+  width: 300px;
+  height: 200px;
   background: #000;
   color: #0f0;
   font-size: 23px;
@@ -18,7 +23,8 @@ div {
   justify-content: center;
   align-items: center;
   /* display: block; */
-  transition: all 0.3s 2s ease-in-out;
+  transition: all 0.1s 1s ease;
+  cursor: pointer;
 }
 
 .rotate:hover {
@@ -39,8 +45,28 @@ div {
 }
 
 /* x,y,z,deg */
-/* 0~1  */
+/* 0~255  */
 .rotate-3d:hover {
   transform: rotate3d(1, 1, 1, 90deg);
 }
 
+.rotate-3d-0:hover {
+  transform: rotate3d(0, 0, 0, 90deg);
+}
+
+.rotate-3d-255:hover {
+  transform: rotate3d(255, 255, 255, 90deg);
+}
+
+
+.rotate-3d-x:hover {
+  transform: rotate3d(255, 0, 0, 90deg);
+}
+
+.rotate-3d-y:hover {
+  transform: rotate3d(0, 255, 0, 90deg);
+}
+
+.rotate-3d-z:hover {
+  transform: rotate3d(0, 0, 255, 90deg);
+}

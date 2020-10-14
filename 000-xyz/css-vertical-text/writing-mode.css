@@ -1,0 +1,63 @@
+/* css writing mode all in one(垂直字体显示) */
+
+
+main {
+  display: flex;
+  flex-flow: nowrap column;
+}
+
+section {
+  display: flex;
+  flex-flow: nowrap row;
+}
+
+div {
+  width: 300px;
+  height: 200px;
+  background: #000;
+  color: #0f0;
+  font-size: 23px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: block; */
+  transition: all 0.1s 1s ease;
+  cursor: pointer;
+}
+
+
+.vertical-text:hover {
+  writing-mode: vertical-lr;
+}
+
+.vertical-number:hover {
+  writing-mode: vertical-lr;
+}
+
+.vertical-string-number:hover {
+  writing-mode: vertical-lr;
+}
+
+/* writing-mode */
+
+.vertical-lr {
+  writing-mode: vertical-lr;
+}
+
+.vertical-rl {
+  writing-mode: vertical-rl;
+}
+
+
+.horizontal-tb {
+  writing-mode: horizontal-tb;
+}
+
+.sideways-lr {
+  writing-mode: sideways-lr;
+}
+
+.sideways-rl {
+  writing-mode: sideways-rl;
+}
